@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Market Club</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Montserrat:400,700|Lato:400,100,300,700,900|Raleway:400,100,200,300,500,700,900|Noto+Serif:400,400italic|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+<style>
+    .get-started-btn {
+      background-color: #ffffff;
+      color: #0b0c13;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none; /* Added text decoration */
+    }
+
+    .get-started-btn:hover {
+      background-color: #0b0c13;
+      color: #ffffff;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!--Preloader-->
+  <div class="loading">
+    <div class="svg-wrapper">
+      <svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect class="animate" height="150" width="150" />
+      </svg>
+      <div class="text">
+        <span class="logo">SI</span>
+        <span class="motto">we predict stocks</span>
+      </div>
+    </div>
+  </div>
+
+  <!--SVG animation-->
+  <script>
+    var p = document.querySelector('.animate'),
+      offset = 600;
+    var offsetMe = function() {
+      if (offset < 0) {
+        offset = 600;
+      }
+      p.style.strokeDashoffset = offset;
+      offset = offset - 5;
+      requestAnimationFrame(offsetMe);
+    }
+    offsetMe();
+  </script>
+
+  <!--Desktop Navigation-->
+  <span class="desktop">
+    <header>
+      <span id="logo">SMART INVEST</span>
+      <nav>
+        <a id="d_one" href="#home">Home</a>
+        <a id="d_two" href="#about">About</a>
+        <a id="d_three" href="newpage.html">Predict</a>
+      </nav>
+    </header>
+  </span>
+
+  <!--Mobile Navigation-->
+  <span class="mobile">
+    <header>
+      <span id="logo">SMART INVEST</span>
+      <div class="button_container">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+    </header>
+    <div class="overlay">
+      <nav>
+        <ul>
+          <li><a id="m_one" href="#home">Home</a></li>
+          <li><a id="m_two" href="#about">About</a></li>
+          <li><a id="m_three" href="newpage.html">Predict</a></li>
+        </ul>
+      </nav>
+    </div>
+  </span>
+
+  <!--Homepage-->
+  <div class="wrapper" id="home">
+    <div class="landing">
+      <h1>this is where we train for the real thing</h1>
+      <h2>we teach responsibility</h2>
+    </div>
+  </div>
+
+  <!--Mouse scroller-->
+  <span class="mouseScroll"></span>
+
+  <!--About SMC-->
+  <div class="about" id="about">
+    <div class="hideme">
+      <h1>SMART INVEST</h1>
+    </div>
+    <div class="hideme">
+      <div id="mission">
+        <p>Discover personalized investment plans tailored to your financial situation and preferences. Our platform utilizes advanced algorithms to analyze market sentiment from news and social media, ensuring balanced portfolios with high returns and controlled risk. With continuous learning and real-time adjustments, we adapt to market dynamics for optimal investment strategies.</p>
+      </div>
+    </div>
+    <!-- Get Started Button -->
+    <a class="get-started-btn" href="newpage.html">Get Started</a>
+  </div>
+
+  <!--Social section-->
+  <div class="social">
+    <!-- Removed Twitter icon -->
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Predicted Stocks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Montserrat:400,700|Lato:400,100,300,700,900|Raleway:400,100,200,300,500,700,900|Noto+Serif:400,400italic|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #0b0c13;
+            background-image: url('investment.jpg'); /* Background image */
+            background-size: cover;
+            background-repeat: no-repeat; /* Prevent background image from repeating */
+            background-attachment: fixed; /* Fix the background image so it doesn't scroll */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .top-bar {
+            background-color: #0b0c13;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+	    font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .home-btn {
+		font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: #0b0c13;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .home-btn:hover {
+            background-color: #e6e6e6;
+        }
+
+        .result-container {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .result-container h1 {
+            color: #0b0c13;
+        }
+
+        .result-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .result-container ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Blue Bar -->
+    <div class="top-bar">
+        <a href="/" class="logo">SMART INVEST</a>
+        <a href="/" class="home-btn">Home</a>
+    </div>
+
+    <!-- Result Section -->
+    <div class="result-container">
+        <h1>Stock Suggestions</h1>
+        <p>{{ suggestion }}</p>
+        <ul>
+            {% for stock in stocks %}
+            <li>{{ stock }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</body>
+
+</html>
