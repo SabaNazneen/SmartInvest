@@ -1,7 +1,6 @@
 # SmartInvest
 
-![Image](https://github.com/user-attachments/assets/0040b0c0-7d67-4afb-8a99-2b869eb0325c)
-## 📌 Overview
+![Image](https://github.com/user-attachments/assets/3d54d58b-c62c-4d03-b654-1ff8e6e91619)## 📌 Overview
 SmartInvest is a **personalized investment platform** that uses **sentiment analysis and machine learning** to predict stock market trends based on real-time financial data.
 
 ## ✨ Features
