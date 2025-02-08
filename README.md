@@ -1,5 +1,4 @@
 # SmartInvest
-# SmartInvest
 
 ![SmartInvest](https://your-image-link.com) <!-- Optional: Add a relevant project image -->
 
@@ -17,7 +16,6 @@ SmartInvest is a **personalized investment platform** that uses **sentiment anal
 - **Backend:** Python, Flask
 - **Machine Learning:** Random Forest, Clustering Algorithms
 - **Frontend:** HTML, CSS, JavaScript
-- **Database:** MongoDB / SQL (mention if used)
 - **APIs:** Financial data APIs (mention specific APIs if used)
 
 ## 🚀 Getting Started
@@ -55,7 +53,6 @@ Make sure you have the following installed:
    ```
 
 ## 📷 Screenshots (Optional)
-_Add relevant screenshots of your project interface._
 
 ## 🛠️ Future Enhancements
 - Add **user authentication** for personalized portfolios.
@@ -72,4 +69,3 @@ This project is licensed under the **MIT License**.
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-SabaNazneen-blue)](https://linkedin.com/in/saba-nazneen)  [![GitHub](https://img.shields.io/badge/GitHub-SabaNazneen-black)](https://github.com/SabaNazneen)
 
 ---
-Feel free to modify and add more details as needed!
